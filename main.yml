@@ -1,1 +1,9 @@
-
+---
+- name: A simple playbook
+  hosts: localhost
+  connection: local
+  remote_user: silver
+  gather_facts: false
+  tasks:
+    - name: Create a simple file called '/tmp/testfile.txt'
+      copy: content="test" dest=/tmp/testfile.txt
