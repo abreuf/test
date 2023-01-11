@@ -1,5 +1,5 @@
 ---
-- name: A simple playbook
+- name: A simple playbook from Github
   hosts: localhost
   connection: local
   remote_user: silver
